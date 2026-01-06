@@ -22,11 +22,11 @@ Mini application de prise de note
 ## Objectif de ce projet :
 Ce projet a été développé dans le cadre de mon apprentissage de Flutter et visait principalement à maîtriser les points suivants :
 
-- Logique d'interaction : Utilisation de paramètres entre les pages.
+- **Logique d'interaction :** Utilisation de paramètres entre les pages.
 
-- Manipulation des données : Utilisation du plugin sqflite pour la gestion d'une base de donnée relationnelle pour gérer le stockage local des données. 
+- **persistance et Manipulation des données :** Utilisation du plugin sqflite pour la gestion d'une base de donnée relationnelle pour gérer le stockage local des données. 
 
--Gestion des états : Utilisation du gestionnaire d'etat providers pour faciliter le partage de données entre les widgets.
+- **Gestion des états :** Utilisation du gestionnaire d'etat providers pour faciliter le partage de données entre les widgets.
 
 
 ## Aperçu du design 
@@ -45,7 +45,7 @@ Ce projet a été développé dans le cadre de mon apprentissage de Flutter et v
 
 - Outils de l'UI : TextField,ListTile, Listview.Builder, Card, FloatingActionButton, TextButton
 
-- Plugins : sqflite, googleFonts, Fluent_ui icons, Gap, Provider, Path_provider
+- Plugins : sqflite, googleFonts, Fluent_ui icons, Gap, Provider, Path_provider, Shared_preferences
 
 
 ## Prochaines Étapes

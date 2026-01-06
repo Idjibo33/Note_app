@@ -1,8 +1,8 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:note/models/constants.dart';
-import 'package:note/models/note.dart';
-import 'package:note/models/providers.dart';
+import 'package:note/models/note_class.dart';
+import 'package:note/providers.dart';
 import 'package:provider/provider.dart';
 
 class AjouterNote extends StatelessWidget {

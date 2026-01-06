@@ -1,5 +1,5 @@
 //Le fichier database_helper de sqflite
-import 'package:note/models/note.dart';
+import 'package:note/models/note_class.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 

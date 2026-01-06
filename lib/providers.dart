@@ -1,15 +1,29 @@
 //les providers
 import 'package:flutter/material.dart';
-import 'package:note/models/database_helper.dart';
-import 'package:note/models/note.dart';
+import 'package:note/data/database_helper.dart';
+import 'package:note/models/note_class.dart';
+import 'package:path/path.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 //le provider de theme
 class StyleTheme extends ChangeNotifier {
   bool isLightMode = true;
+  static const key = "themeKey";
+
+  StyleTheme(this.isLightMode);
+
+  //charger le thème
+  Future<void> chargerTheme() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    isLightMode = prefs.getBool(key)!;
+    notifyListeners();
+  }
 
   //changer le theme
-  void changerTheme() {
+  Future<void> changerTheme() async {
     isLightMode = !isLightMode;
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(key, isLightMode);
     notifyListeners();
   }
 }

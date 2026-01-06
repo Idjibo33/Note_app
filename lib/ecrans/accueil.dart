@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:note/ecrans/ajouter_note.dart';
 import 'package:note/models/constants.dart';
-import 'package:note/models/providers.dart';
+import 'package:note/providers.dart';
 import 'package:note/widgets/note_widget.dart';
 import 'package:provider/provider.dart';
 
